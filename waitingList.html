@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordezy - Lista de Espera</title>
+  <style>
+    body {
+      width: 100%;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('./loginImg.png') center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      /* background-color: rgba(255, 255, 255, 0.9); */
+      /* padding: 30px; */
+      /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+      border-radius: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+      /* margin-bottom: 20px; */
+
+    }
+
+    .header h1 {
+      color: #007BFF;
+      font-size: 36px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
+
+    .header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .benefits {
+      /* width: 50%; */
+      height: 100%;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .benefits h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .benefit-cards {
+      width: 100%;
+      display: flex;
+      padding: 30px 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      /*  */
+      /* flex-wrap: wrap; */
+      justify-content: center;
+    }
+
+    .benefit-card {
+      width: 20%;
+      margin: 10px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .benefit-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .cta-button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Estilos para o formulário */
+    .signup-form {
+      width: 50%;
+      /* padding: 20px; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* text-align: left; */
+      /* max-width: 400px; */
+      margin-top: 20px;
+    }
+
+    .signup-input {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: #f9f9f9;
+    }
+
+    /* Estilos para o botão de envio do formulário */
+    .signup-button {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 20px;
+      text-decoration: none;
+      display: inline-block;
+      width: 80%;
+      transition: background-color 0.3s;
+    }
+
+    .signup-button:hover {
+      background-color: #0056b3;
+    }
+
+    .wrapperSection1 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      flex-direction: row;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Ordezy - Em Breve!</h1>
+      <img style="width: 140px;" src="./logoOrdezy.png" alt="Ordezy Logo">
+    </div>
+    <div class="wrapperSection1">
+
+      <div class="benefits">
+        <h2>Principais Benefícios:</h2>
+        <ul>
+          <li>Gerencie ordens de serviço de forma eficiente e gere documentos profissionais.</li>
+          <li>Cadastre e controle seus produtos de forma organizada e atualizada.</li>
+          <li>Realize vendas com facilidade e mantenha seu estoque sempre atualizado.</li>
+          <li>Importe e exporte produtos em formato CSV para maior praticidade.</li>
+          <li>Registre todas as vendas e faça estornos quando necessário.</li>
+          <li>Controle suas despesas e mantenha suas finanças em dia.</li>
+          <li>Adicione usuários e gerencie acessos com o painel de administração.</li>
+        </ul>
+      </div>
+      <!-- Formulário (sempre visível) -->
+      <div class="signup-form">
+        <div>
+
+          <h2>Inscreva-se para ser notificado quando o Ordezy estiver disponível!</h2>
+          <form>
+            <input type="text" class="signup-input" placeholder="Nome" required>
+            <input type="tel" class="signup-input" placeholder="Telefone" required>
+            <input type="email" class="signup-input" placeholder="Email" required>
+            <button class="signup-button" type="submit">Inscrever-se</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="benefit-cards">
+      <div class="benefit-card">
+        <h3>Gerenciamento Eficiente</h3>
+        <p>Controle suas ordens de serviço de forma organizada.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>Controle de Estoque</h3>
+        <p>Mantenha seu estoque atualizado com facilidade.</p>
+      </div>
+      <div class="benefit-card">
+        <h3>Exportação de Dados</h3>
+        <p>Importe e exporte produtos em formato CSV.</p>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
