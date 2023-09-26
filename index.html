@@ -31,7 +31,11 @@
       gap: 20px;
       flex-direction: column;
       align-items: flex-start;
+
+
     }
+
+
 
     .header {
       display: flex;
@@ -77,6 +81,7 @@
     .benefit-cards {
       width: 100%;
       display: flex;
+      flex-direction: row;
       padding: 30px 0;
       background-color: rgba(255, 255, 255, 0.5);
       /*  */
@@ -175,6 +180,35 @@
       margin-top: 10px;
       text-align: center;
       font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        height: 200px;
+      }
+
+      .wrapperSection1 {
+
+        flex-direction: column;
+      }
+
+      .signup-form {
+        width: 100%;
+      }
+
+      .benefit-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .benefit-card {
+        width: 80%;
+      }
+
+      .benefits {
+        width: 80%;
+      }
     }
   </style>
   <!-- Meta Pixel Code -->
